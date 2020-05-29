@@ -24,15 +24,45 @@ nav {
     border-color: grey;
     border-radius: 12px;
 }
+.choice {
+    display: block;
+}
 
 h1 {
     text-align: center;
 }
 
 #start-screen {
-    text-align: center
+    text-align: center;
 }
 
 #quiz {
     display: none;
+}
+
+#results-screen {
+    display: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+#grade {
+    text-align: center;
+    size: 24px;
+}
+
+#timeGauge {
+    text-align: right;
+}
+
+#high-scores {
+    display: none;
+}
+
+#out-of-time {
+    color: darkred;
+    display: none;
+    text-align: center;
 }

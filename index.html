@@ -26,15 +26,39 @@
                     <div id="start-screen"><button id="start-button">CLICK HERE TO START</button></div>
                     <div id="quiz">
                         <div id="question-text"></div>
-                        <div id="choices-buttons"></div>
+                        <div id="choices">
+                        <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+                        <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+                        <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+                        <button class="choice" id="D" onclick="checkAnswer('D')"></button> 
                         </div>
-                    <div id="results-screen"></div>
+                        <div id="timeGauge"></div>
+                        </div>
+                    <div id="results-screen">
+                        <h3><u>Final Score: </u></h3>
+                        <h5 id="out-of-time">OUT OF TIME!</h5>
+                        <div id="grade"></div>
+                        <div id="score">
+                        <input type="text" id="name" placeholder="Enter Your Name"><button id="save">Save Score</button>
+                    </div>
+                    </div>
+                    <div id="high-scores">
+                        <h3><u>High Scores</u></h3>
+                        <div>
+                            <ol id="score-list"></ol>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <audio id="wrong">
+        <source src="audio/buzz.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="right">
+        <source src="audio/correct.mp3" type="audio/mpeg">
+    </audio>
     </div>
     </div>
     <script src="script.js"></script>
